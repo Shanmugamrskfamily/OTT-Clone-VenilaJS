@@ -85,3 +85,29 @@ cardContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth + 200;
     })
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+  
+    // Toggle the nav menu when menuToggle is clicked
+    menuToggle.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
+  
+    // Close the nav menu when a link is clicked
+    const navItems = document.querySelectorAll('.nav-items');
+    navItems.forEach(item => {
+      item.addEventListener('click', function () {
+        navLinks.classList.remove('active');
+      });
+    });
+  
+    // Close the nav menu when the window is resized
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 768) {
+        navLinks.classList.remove('active');
+      }
+    });
+  });
+  
