@@ -2,8 +2,6 @@
 
 Welcome to the OTT Platform Website Clone project! This project aims to recreate the design and functionality of popular OTT (Over-The-Top) platform websites like Netflix, Amazon Prime, Zee5, etc., using HTML, CSS, and JavaScript. It serves as a demonstration of front-end development and user interface design skills.
 
-![Project Preview](link-to-project-preview-image)
-
 ## Live Demo
 
 Check out the live demo [here](https://ott-clone-veritech.netlify.app/).
